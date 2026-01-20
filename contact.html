@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hm Khoja Play Land - Contact</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #111827;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg,#ff4d4d,#ff7a7a);
+            color: white;
+            padding: 25px 15px;
+            text-align: center;
+            overflow:hidden;
+            transition: transform 0.5s ease;
+        }
+
+        header:hover{
+            transform: scale(1.02);
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            background: #ff6666;
+            padding: 15px 0;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight:600;
+            padding:8px 15px;
+            border-radius:8px;
+            transition: 0.3s all;
+        }
+
+        nav a:hover{
+            background: rgba(255,255,255,0.1);
+            box-shadow: 0 4px 15px rgba(255,255,0,0.4);
+        }
+
+        /* CONTENT CARD */
+        .content {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: 0.3s all;
+        }
+
+        .content:hover{
+            transform: scale(1.02);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .content h2, .content h3 {
+            color:#ff4d4d;
+            margin-bottom:12px;
+        }
+
+        .content p{
+            margin-bottom:12px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            transition: 0.3s all;
+        }
+
+        input:focus, textarea:focus{
+            border-color: #ff4d4d;
+            box-shadow: 0 0 8px rgba(255,77,77,0.3);
+            outline: none;
+        }
+
+        button {
+            padding: 12px 25px;
+            background: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight:600;
+            transition: 0.3s all;
+        }
+
+        button:hover {
+            background: #ff6666;
+            box-shadow: 0 5px 15px rgba(255,77,77,0.4);
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ff6666;
+            color:white;
+            font-weight:600;
+            transition:0.3s all;
+        }
+
+        footer:hover{
+            background:#ff5555;
+        }
+
+        /* MOBILE */
+        @media(max-width:768px){
+            header h1{ font-size:28px; }
+            nav{ gap:25px; }
+            .content{ padding:20px; }
+            input, textarea{ padding:10px; }
+            button{ padding:10px 20px; }
+        }
+
+        @media(max-width:480px){
+            header h1{ font-size:22px; }
+            header p{ font-size:14px; }
+            nav{ gap:15px; }
+            .content{ padding:15px; }
+            input, textarea{ padding:8px; }
+            button{ padding:8px 16px; font-size:14px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+    <p>Get in touch for bookings & inquiries</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="content">
+    <h2>Get in Touch</h2>
+    <p>For inquiries, bookings, or information, contact our General Manager:</p>
+    <p><strong>Mansoor Ali Larik</strong></p>
+    <p>Phone: 0308-3324154</p>
+
+    <h3>Send a Message</h3>
+    <form onsubmit="alert('Message Sent!'); return false;">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<footer>
+    &copy; 2026 Hm Khoja Play Land
+</footer>
+
+</body>
+</html>
