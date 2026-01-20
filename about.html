@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- ✅ Browser + Mobile issue fix -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Hm Khoja Play Land - About</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body{
+    background:#f1f5f9;
+    color:#111827;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#ff4d4d,#ff7a7a);
+    color:white;
+    padding:30px 15px;
+    text-align:center;
+    overflow:hidden;
+    transition: transform 0.5s ease;
+}
+
+header:hover{
+    transform: scale(1.02); /* slight zoom effect */
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    background:#ff6666;
+    padding:15px 0;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    padding:8px 15px;
+    border-radius:8px;
+    transition:0.3s all;
+}
+
+nav a:hover{
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 4px 15px rgba(255,255,0,0.4);
+}
+
+/* CONTENT */
+.content{
+    max-width:900px;
+    margin:40px auto;
+    padding:25px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.3s all;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    box-shadow:0 15px 30px rgba(255,255,0,0.2);
+}
+
+.card h2{
+    color:#ff4d4d;
+    margin-bottom:12px;
+}
+
+/* HIGHLIGHT BOX */
+.highlight{
+    background:linear-gradient(135deg,#38bdf8,#0ea5e9);
+    color:white;
+    padding:25px;
+    border-radius:16px;
+    margin-bottom:25px;
+    transition:0.3s all;
+}
+
+.highlight:hover{
+    transform: scale(1.03);
+    box-shadow:0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* OFFER BOX */
+.offer{
+    background:#ecfeff;
+    border-left:6px solid #06b6d4;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:25px;
+    transition:0.3s all;
+}
+
+.offer:hover{
+    transform: scale(1.03);
+    box-shadow:0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#ff6666;
+    color:white;
+    font-weight:600;
+    transition:0.3s all;
+}
+
+footer:hover{
+    background:#ff5555;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    header h1{ font-size:28px; }
+    nav{ gap:25px; }
+    .content{ padding:20px; }
+    .card, .highlight, .offer{ padding:20px; }
+}
+
+@media(max-width:480px){
+    header h1{ font-size:22px; }
+    header p{ font-size:14px; }
+    nav{ gap:15px; }
+    .content{ padding:15px; }
+    .card, .highlight, .offer{ padding:15px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎡 About Hm Khoja Play Land</h1>
+    <p>Safe • Fun • Family Entertainment</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="content">
+
+    <div class="card">
+        <h2>🎯 Our Mission</h2>
+        <p>
+            Hm Khoja Play Land ek modern amusement park hai jahan
+            bachon aur families ke liye safe, clean aur enjoyable
+            environment provide kiya jata hai.
+        </p>
+    </div>
+
+    <div class="highlight">
+        <h2>🏫 School Picnic Facility</h2>
+        <p>
+            Schools ke liye special picnic arrangements available hain.
+            Group rides, safe environment aur affordable packages ke sath.
+        </p>
+        <p><strong>Advance booking required.</strong></p>
+    </div>
+
+    <div class="offer">
+        <h2>🌅 Morning Booking Discount</h2>
+        <p>
+            Subah ke time (10 AM – 1 PM) booking karwane par
+            <strong>special discount</strong> diya jata hai.
+        </p>
+        <p>Perfect for schools & families!</p>
+    </div>
+
+    <div class="card">
+        <h2>👨‍💼 Management</h2>
+        <p><strong>General Manager:</strong> Mansoor Ali Larik</p>
+        <p><strong>Contact:</strong> 0308-3324154</p>
+    </div>
+
+</div>
+
+<footer>
+&copy; 2026 Hm Khoja Play Land | All Rights Reserved
+</footer>
+
+</body>
+</html>
