@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hm Khoja Play Land - Home</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* HEADER */
+header{
+    background:rgba(255,77,77,0.9);
+    padding:30px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:36px;
+}
+
+header p{
+    font-size:18px;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap: 60px; 
+    background:rgba(255,102,102,0.95);
+    padding:15px 0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:16px;
+    padding:8px 15px;
+    border-radius:8px;
+    transition:0.3s all;
+}
+
+nav a:hover{
+    color:#ffea00;
+    background:rgba(255,255,255,0.1);
+    box-shadow:0 4px 15px rgba(255,255,0,0.4);
+}
+
+/* TIMELINE */
+.timeline{
+    width:100%;
+    overflow:hidden;
+    background:rgba(0,0,0,0.85);
+    white-space:nowrap;
+    padding:10px 0;
+}
+
+.timeline span{
+    display:inline-block;
+    padding-left:100%;
+    animation:scrollText 18s linear infinite;
+    font-size:16px;
+    color:#ffea00;
+}
+
+@keyframes scrollText{
+    0%{ transform:translateX(0); }
+    100%{ transform:translateX(-100%); }
+}
+
+/* HERO SECTION */
+.hero{
+    height:60vh;
+    background: url('train.jpg.jpeg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    padding:0 15px;
+    overflow:hidden;
+    transition: transform 0.5s ease;
+}
+
+.hero:hover{
+    transform: scale(1.03); /* slight zoom on hover */
+}
+
+.hero h1, .hero p{
+    position: relative;
+    color: #ffea00;
+    text-shadow: 1px 1px 5px black;
+}
+
+.hero h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+/* STATUS */
+.status{
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    margin:20px 0;
+}
+
+/* RIDES SECTION */
+.rides, .small-rides{
+    padding:40px 20px;
+    background:#020617;
+}
+
+.rides h2{
+    text-align:center;
+    color:#ffea00;
+    margin-bottom:40px;
+    font-size:28px;
+}
+
+.small-rides h2{
+    text-align:center;
+    color:#38bdf8;
+    margin-bottom:40px;
+    font-size:26px;
+}
+
+/* CARD GRID */
+.ride-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(180px,1fr));
+    gap:20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* CARD */
+.card{
+    background:rgba(255,255,255,0.08);
+    border-radius:15px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    transition:0.3s all;
+}
+
+.card img{
+    width:100%;
+    height:140px;
+    object-fit:cover;
+}
+
+.card h3{
+    color:#ffea00;
+    margin:10px 0 5px;
+    font-size:18px;
+}
+
+.card p{
+    font-size:14px;
+    padding:0 10px 10px;
+}
+
+.card:hover{
+    transform:translateY(-8px) scale(1.05);
+    box-shadow:0 15px 30px rgba(255,255,0,0.6);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:15px;
+    background:#020617;
+    color:white;
+    font-weight:bold;
+    font-size:14px;
+}
+
+/* ================= MOBILE MEDIA QUERIES ================= */
+@media (max-width: 768px){
+    header h1{ font-size:28px; }
+    header p{ font-size:16px; }
+    nav{ gap:35px; }
+    .timeline span{ font-size:14px; }
+    .hero h1{ font-size:28px; }
+    .hero p{ font-size:16px; }
+    .rides h2, .small-rides h2{ font-size:24px; }
+    .ride-cards{ grid-template-columns:repeat(auto-fit, minmax(150px,1fr)); gap:15px; }
+    .card img{ height:130px; }
+    .card h3{ font-size:16px; }
+}
+
+@media (max-width: 480px){
+    header h1{ font-size:22px; }
+    header p{ font-size:14px; }
+    .hero h1{ font-size:22px; }
+    .hero p{ font-size:14px; }
+    .status{ font-size:18px; margin:15px 10px; }
+    .ride-cards{ grid-template-columns:repeat(auto-fit, minmax(130px,1fr)); gap:10px; }
+    .card img{ height:120px; }
+    .card h3{ font-size:14px; }
+    .card p{ font-size:12px; }
+    footer{ font-size:12px; padding:10px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🏰 Hm Khoja Play Land</h1>
+    <p>Fun for Kids & Family!</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="timeline">
+<span>
+🎡 Park Opens 3:30 PM &nbsp; | &nbsp;
+🕚 Park Closes 11:00 PM &nbsp; | &nbsp;
+🎉 Enjoy Rides • Games • Family Fun at Hm Khoja Play Land 🎠
+</span>
+</div>
+
+<section class="hero">
+    <h1>Welcome to Hm Khoja Play Land</h1>
+    <p>Enjoy Rides • Games • Family Fun</p>
+</section>
+
+<div class="status" id="openStatus">Loading status...</div>
+
+<section class="rides">
+<h2>🎢 Our Fun Rides</h2>
+<div class="ride-cards">
+    <div class="card"><img src="Sheep.jpg.jpeg" alt="sheep"><h3>Sheep Ride</h3><p>Rs 50</p></div>
+    <div class="card"><img src="car.jpg.jpeg" alt="car"><h3>Car Ride</h3><p>Rs 50</p></div>
+    <div class="card"><img src="horse.jpg.jpeg" alt="horse"><h3>Horse Ride</h3><p>Rs 50</p></div>
+    <div class="card"><img src="cup.jpg.jpeg" alt="cup"><h3>Cup</h3><p>Rs 50</p></div>
+    <div class="card"><img src="train.jpg.jpeg" alt="train"><h3>Train</h3><p>Rs 50</p></div>
+    <div class="card"><img src="Miniclouds.jpg.jpeg" alt="Mini"><h3>Mini clouds Ride</h3><p>Rs 50</p></div>
+    <div class="card"><img src="piayala.jpg.jpeg" alt="piayala"><h3>Ccup Rides</h3><p>Rs 50</p></div>
+    <div class="card"><img src="4Dmothin.jpg.jpeg" alt="4d"><h3>4D Motion Ride</h3><p>Rs 50</p></div>
+</div>
+</section>
+
+<section class="small-rides">
+<h2>🎠 Small Rides</h2>
+<div class="ride-cards">
+    <div class="card"><img src="kidride.jpg.jpeg" alt="kid"><h3>small ride</h3><p>Rs 10</p></div>
+    <div class="card"><img src="small.jpg.jpeg" alt="Small"><h3>small ride</h3><p>Rs 10</p></div>
+    <div class="card"><img src="smallcar.jpg.jpeg" alt="Small"><h3>small car</h3><p>Rs 10</p></div>
+    <div class="card"><img src="smallride.jpg.jpeg" alt="Smal"><h3>small ride</h3><p>Rs 10</p></div>
+    <div class="card"><img src="micimouse.jpg.jpeg" alt="mici"><h3>Micimouse</h3><p>Rs 10</p></div>
+    <div class="card"><img src="dianasor.jpg.jpeg" alt="dianasor"><h3>small ride</h3><p>Rs 10</p></div>
+    <div class="card"><img src="pinkcar.jpg.jpeg"  alt="pink"><h3>small ride </h3><p>Rs 10</p></div>
+    <div class="card"><img src="fish.jpg.jpeg" alt="fish"><h3>small ride</h3><p>Rs 10</p></div>
+</div>
+</section>
+
+<footer>
+&copy; 2026 Hm Khoja Play Land | Managed by Mansoor Ali Larik
+</footer>
+
+<script>
+function checkOpenStatus(){
+    const now=new Date();
+    const t=now.getHours()*60+now.getMinutes();
+    const open=15*60+30;
+    const close=23*60;
+    const s=document.getElementById("openStatus");
+
+    if(t>=open && t<close){
+        s.innerText="🎉 We are OPEN Now!";
+        s.style.color="#00ff00";
+    }else{
+        s.innerText="⛔ We are CLOSED Now!";
+        s.style.color="#ff0000";
+    }
+}
+checkOpenStatus();
+setInterval(checkOpenStatus,60000);
+</script>
+
+</body>
+</html>
